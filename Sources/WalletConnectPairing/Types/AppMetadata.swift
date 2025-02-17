@@ -36,9 +36,9 @@ public struct AppMetadata: Codable, Equatable {
                 throw Errors.invalidLinkModeUniversalLink
             }
 
-            if let universal = universal, !Redirect.isValidURL(universal) {
-                throw Errors.invalidUniversalLinkURL
-            }
+//            if let universal = universal, !Redirect.isValidURL(universal) {
+//                throw Errors.invalidUniversalLinkURL
+//            }
 
             self.native = native
             self.universal = universal
